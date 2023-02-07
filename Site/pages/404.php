@@ -1,0 +1,6 @@
+<section class="erro-404">
+    <div class="center">
+        <h2><i style="padding:0 10px;" class="fa fa-times"></i>A página não existe!</h2>
+        <p>Deseja voltar para a <a href="<?php echo INCLUDE_PATH?>"> pagina inicial</a>?</a>
+    </div><!--center-->
+</section>

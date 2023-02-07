@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans";
+}
+
+.center{
+    max-width: 1280px;
+    padding:0 2%;
+    margin:0 auto;
+}  
+.w33{
+    width: 30%;
+    padding:0 10px;
+}
+.w50{
+    padding:0 10px;
+    width: 50%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.botao-menu-mobile {
+    display: none;
+} 
+
+header{
+    background: #404580;
+    padding: 20px 0;
+}
+header .logo{
+    background: #404580;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 18px;
+    grid-area: auto;
+    padding:5px 8px;
+    top: 1px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+}
+nav.mobile li{
+    display: none;
+    
+}
+nav.desktop ul{
+    background: #404580;
+    padding: 5px 5px;
+    border-radius: 18px;
+    position: relative;
+    top: 4px;
+    list-style-type: none;
+}
+nav.desktop li{
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav.desktop a{
+    transition: 1s;
+    color:#ffffff;
+    text-decoration: none; 
+}
+nav.desktop a:hover{
+    color:#a2aafc;
+    text-decoration: underline;
+}
+section.banner-principal{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(51,51,51,0.5);
+}
+section.banner-principal form{
+    width: 93%;
+    text-align: center;
+    max-width: 500px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+section.banner-principal form h2{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+section.banner-principal form input[type=email]{
+    border-radius: 25px;
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+    background: white;
+    color: #333;
+    font-size: 22px;
+    padding-left: 25px;
+    border: 0;
+
+}
+section.banner-principal form input[type=submit]{
+    border-radius: 25px;
+    width: 100%;
+    height: 66px;
+    margin-top: 10px;
+    background: #404580;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    border: 0;
+    transition: 1s
+}
+section.banner-principal form input[type=submit]:hover{
+    color:white;
+    background:#52599e ;
+    text-decoration: none;
+}
+section.descricao-autor{
+    padding: 35px 0;
+}
+
+section.descricao-autor h2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #444;
+}
+section.descricao-autor p{
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+section.especialidades{
+    padding: 40px 0;
+    background: rgb(196, 195, 195);
+}
+section.especialidades h2.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(143, 143, 143);
+}
+.box-especialidade{
+    text-align:center;
+    margin:40px 0;
+}
+.box-especialidade h3{
+    padding: 10px;
+    color: #404580;
+    font-size: 40px;
+}
+.box-especialidade h4{
+    font-weight: 300;
+    color: #555555;
+    font-size: 25px;
+}
+section.extras{
+    padding:30px 0;
+    background: #404580;
+    
+}
+.servicos-container,.depoimentos-container{
+   padding:0 30px;
+}
+section.extras .title{
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.depoimento-single{
+    padding:15px 0;
+    border-bottom: 1px solid #5056A0;
+}
+p.depoimento-descricao{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+p.nome-autor{
+    font-size: 15px;
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.servicos ul{
+    margin: 20px 0; 
+}
+.servicos li{
+    margin-bottom:15px;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+footer{
+    background: #313462;
+    padding:30px 0;
+}
+footer p{
+    color:white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+section.erro-404{
+    min-height:480px;
+    padding: 30px 0;
+}
+section.erro-404 h2{
+    text-align: center;
+    color: #444;
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-5);
+}
+section.erro-404 p{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-5);
+    font-weight: 600;
+    font-size: 20px;
+}
+section.erro-404 a{
+    color:#5286d4;
+    text-decoration: none;
+}
+#map{
+    width: 100%;
+    height: 400px;
+}
+.formulario{
+    min-height:480px;
+    padding: 30px 30px;
+    font-weight: 300;
+    font-size: 20px;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-5);
+}
+.msc{
+    padding: 0px 0px;
+    width: 1px;
+    height: 10px;
+   
+}
+
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    .botao-menu-mobile{
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    nav.mobile ul{
+        top: 55px;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: none;
+        text-align: center;
+    } 
+    nav.mobile li{
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        background:white;
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding:8px 0;
+    }
+    nav.mobile a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+} 
+@media screen and (max-width: 768px){
+    img{
+        float: none !important;
+        display: block;
+        margin:0 auto;
+        max-width: 500px;  
+    }
+    .w50{
+        width: 100%;
+        padding: 20px;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+    .box-especialidade{
+        padding:40px 20px;
+        margin:0;
+    }
+}
